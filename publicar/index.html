@@ -593,86 +593,63 @@
 </sc-if>
 
 <sc-if value="{{ isInscricao }}">
-  <section style="background:#002966;color:#FFFBF0;padding:clamp(52px,6vw,96px) clamp(20px,5vw,40px)">
-    <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,4vw,60px);align-items:center">
-      <div style="display:grid;gap:22px">
-        <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#F5A780">Inscrição</span>
-        <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.08;margin:0;letter-spacing:-0.02em">Inscrição por WhatsApp</h1>
-        <p style="margin:0;font-size:1.08rem;line-height:1.7;color:#FDECE3;max-width:46ch">O botão abre uma conversa connosco com as perguntas já escritas. Basta responder a cada uma e nós voltamos a contactar para marcar a primeira explicação.</p>
-        <a href="{{ waPrefilled }}" style="background:#EF7639;color:#002966;border:1.5px solid #002966;border-radius:8px;padding:15px 24px;min-height:52px;display:inline-flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem;text-decoration:none;justify-self:start"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.19-.31a8.19 8.19 0 0 1-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.26 8.2Zm4.52-6.14c-.25-.13-1.47-.72-1.69-.8-.23-.08-.4-.13-.56.13-.17.25-.65.8-.8.96-.15.17-.29.19-.54.06a6.66 6.66 0 0 1-1.96-1.21 7.4 7.4 0 0 1-1.36-1.69c-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.4 1.02 2.57.13.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.6.19 1.14.16 1.57.1.48-.07 1.5-.61 1.71-1.2.21-.6.21-1.11.15-1.22-.06-.11-.23-.17-.48-.29Z"></path></svg>Iniciar a inscrição</a>
-        <p style="margin:0;font-size:0.94rem;line-height:1.6;color:#F5A780">Respondemos de segunda a sexta, 10:00–12:30 e 14:00–19:00. Se preferir falar primeiro, o número do centro é o <a href="tel:+351214100902" style="color:#FFFBF0">214 100 902</a>.</p>
-      </div>
-      <div role="img" aria-label="Receção do centro, com balcão em madeira e parede azul" style="background:url(assets/fotos/recepcao.jpg) center/cover no-repeat;border-radius:16px;min-height:clamp(240px,32vw,420px)"></div>
+  <section style="background:#002966;color:#FFFBF0;padding:clamp(52px,6vw,88px) clamp(20px,5vw,40px)">
+    <div style="max-width:880px;margin:0 auto;display:grid;gap:18px">
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.1;margin:0;letter-spacing:-0.02em">Inscrição</h1>
+      <p style="margin:0;font-size:1.08rem;line-height:1.6;color:#FDECE3">A inscrição faz-se por ficha em papel ou enviando os dados por WhatsApp. Não há formulário web.</p>
     </div>
   </section>
 
-  <section style="background:#FFFBF0;padding:clamp(56px,7vw,100px) clamp(20px,5vw,40px)">
-    <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,5vw,72px);align-items:start">
-      <div style="display:grid;gap:20px;align-content:start">
-        <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,3.2vw,2.4rem);margin:0;letter-spacing:-0.02em;line-height:1.1;max-width:18ch">O que pedimos</h2>
-        <p style="margin:0;line-height:1.7;font-size:1.04rem;max-width:42ch">Seis respostas curtas, já escritas na conversa. Com elas conseguimos confirmar o explicador e propor horários.</p>
-        <a href="{{ waPrefilled }}" style="background:#002966;color:#FFFBF0;border:1.5px solid #002966;border-radius:8px;padding:15px 24px;min-height:52px;display:inline-flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:600;text-decoration:none;justify-self:start"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.19-.31a8.19 8.19 0 0 1-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.26 8.2Zm4.52-6.14c-.25-.13-1.47-.72-1.69-.8-.23-.08-.4-.13-.56.13-.17.25-.65.8-.8.96-.15.17-.29.19-.54.06a6.66 6.66 0 0 1-1.96-1.21 7.4 7.4 0 0 1-1.36-1.69c-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.4 1.02 2.57.13.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.6.19 1.14.16 1.57.1.48-.07 1.5-.61 1.71-1.2.21-.6.21-1.11.15-1.22-.06-.11-.23-.17-.48-.29Z"></path></svg>Abrir a conversa</a>
+  <section style="background:#FFFBF0;padding:clamp(56px,7vw,96px) clamp(20px,5vw,40px)">
+    <div style="max-width:1120px;margin:0 auto;display:grid;gap:28px">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,2.6vw,2.1rem);margin:0;letter-spacing:-0.01em">Duas vias</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+        <div style="border:1px solid #D7CDBA;border-radius:14px;padding:32px;display:grid;gap:14px;align-content:start">
+          <span style="font-family:'Space Grotesk',sans-serif;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#0047B2">Via 1</span>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.3rem;margin:0">Ficha em PDF</h3>
+          <p style="margin:0;line-height:1.65">Descarrega-se, preenche-se, e envia-se por email ou entrega-se no centro.</p>
+          <span style="display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;background:#E5E7EB;color:#374151;padding:4px 9px;border-radius:4px;justify-self:start">Por preencher — ficheiro PDF da ficha</span>
+          <p style="margin:0;line-height:1.65">O ficheiro ainda não está disponível para descarregar. Até estar, pede-se a ficha por email.</p>
+          <a href="mailto:geral@desviopadrao.pt?subject=Pedido%20da%20ficha%20de%20inscri%C3%A7%C3%A3o" style="border:1.5px solid #002966;color:#002966;border-radius:8px;padding:14px 22px;min-height:44px;display:inline-flex;align-items:center;font-family:'Space Grotesk',sans-serif;font-weight:600;text-decoration:none;justify-self:start" style-hover="background:#002966;color:#FFFBF0">Enviar email</a>
+        </div>
+        <div style="border:1px solid #D7CDBA;border-radius:14px;padding:32px;display:grid;gap:14px;align-content:start;background:#F9FAFB">
+          <span style="font-family:'Space Grotesk',sans-serif;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#0047B2">Via 2</span>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.3rem;margin:0">Dados por WhatsApp</h3>
+          <p style="margin:0;line-height:1.65">É o caminho que a maioria usa. O botão abre uma conversa com a lista de campos já escrita — basta responder ao lado de cada um. O centro transcreve para a ficha.</p>
+          <div style="display:grid;gap:12px;justify-items:start">
+            <a href="{{ waPrefilled }}" style="background:#EF7639;color:#002966;border:1.5px solid #002966;border-radius:8px;padding:14px 22px;min-height:44px;display:inline-flex;align-items:center;font-family:'Space Grotesk',sans-serif;font-weight:600;text-decoration:none">WhatsApp com a lista de campos</a>
+            <a href="https://wa.me/351964989883" style="border:1.5px solid #002966;color:#002966;border-radius:8px;padding:14px 22px;min-height:44px;display:inline-flex;align-items:center;font-family:'Space Grotesk',sans-serif;font-weight:600;text-decoration:none" style-hover="background:#002966;color:#FFFBF0">WhatsApp em branco</a>
+          </div>
+        </div>
       </div>
-      <ol style="margin:0;padding:0;list-style:none;display:grid;border-bottom:1px solid #C9BEA6">
-        <li style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline;padding:18px 0;border-top:1px solid #C9BEA6">
-          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.92rem;color:#0047B2">01</span>
-          <span style="display:grid;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem">Nome e ano do aluno</span><span style="line-height:1.6;font-size:0.96rem;color:#4B5563">E a escola, se for relevante.</span></span>
-        </li>
-        <li style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline;padding:18px 0;border-top:1px solid #C9BEA6">
-          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.92rem;color:#0047B2">02</span>
-          <span style="display:grid;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem">Disciplinas a trabalhar</span><span style="line-height:1.6;font-size:0.96rem;color:#4B5563">Uma ou mais; confirmamos logo se temos explicador disponível.</span></span>
-        </li>
-        <li style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline;padding:18px 0;border-top:1px solid #C9BEA6">
-          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.92rem;color:#0047B2">03</span>
-          <span style="display:grid;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem">Onde</span><span style="line-height:1.6;font-size:0.96rem;color:#4B5563">No centro, online ou ao domicílio, na área de Lisboa.</span></span>
-        </li>
-        <li style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline;padding:18px 0;border-top:1px solid #C9BEA6">
-          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.92rem;color:#0047B2">04</span>
-          <span style="display:grid;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem">Dias e horas possíveis</span><span style="line-height:1.6;font-size:0.96rem;color:#4B5563">Para cruzarmos com a disponibilidade do explicador.</span></span>
-        </li>
-        <li style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline;padding:18px 0;border-top:1px solid #C9BEA6">
-          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.92rem;color:#0047B2">05</span>
-          <span style="display:grid;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem">Quem podemos contactar</span><span style="line-height:1.6;font-size:0.96rem;color:#4B5563">Nome e telefone do encarregado de educação.</span></span>
-        </li>
-        <li style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline;padding:18px 0;border-top:1px solid #C9BEA6">
-          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.92rem;color:#0047B2">06</span>
-          <span style="display:grid;gap:4px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem">Email</span><span style="line-height:1.6;font-size:0.96rem;color:#4B5563">Para enviarmos os valores e as confirmações.</span></span>
-        </li>
+    </div>
+  </section>
+
+  <section style="background:#F9FAFB;padding:clamp(56px,7vw,96px) clamp(20px,5vw,40px);border-top:1px solid #E5E7EB">
+    <div style="max-width:880px;margin:0 auto;display:grid;gap:22px">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,2.6vw,2.1rem);margin:0;letter-spacing:-0.01em">Dados pedidos</h2>
+      <span style="display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;background:#E5E7EB;color:#374151;padding:4px 9px;border-radius:4px;justify-self:start">Por preencher — lista definitiva de campos da ficha</span>
+      <ul style="margin:0;padding-left:22px;display:grid;gap:10px;line-height:1.6">
+        <li>Nome do aluno e data de nascimento</li>
+        <li>Ano de escolaridade e escola</li>
+        <li>Disciplinas a trabalhar</li>
+        <li>Modalidade: no centro, online ou ao domicílio</li>
+        <li>Dias e horas possíveis</li>
+        <li>Nome e contacto do encarregado de educação</li>
+        <li>Email para envio de informação</li>
+      </ul>
+      <p style="margin:0;line-height:1.65;font-size:0.96rem">A lista tem de corresponder exatamente aos campos da ficha em PDF, e fica marcada como por preencher até isso ser confirmado.</p>
+    </div>
+  </section>
+
+  <section style="background:#FFFBF0;padding:clamp(56px,7vw,96px) clamp(20px,5vw,40px)">
+    <div style="max-width:880px;margin:0 auto;display:grid;gap:28px">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,2.6vw,2.1rem);margin:0;letter-spacing:-0.01em">Depois da inscrição</h2>
+      <ol style="margin:0;padding:0;list-style:none;display:grid;gap:18px">
+        <li style="display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:start"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;color:#0047B2;font-size:1.2rem">1</span><span style="line-height:1.65">Confirma-se o explicador para as disciplinas indicadas.</span></li>
+        <li style="display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:start"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;color:#0047B2;font-size:1.2rem">2</span><span style="line-height:1.65">Marca-se a primeira explicação, que é uma apresentação.</span></li>
+        <li style="display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:start"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;color:#0047B2;font-size:1.2rem">3</span><span style="line-height:1.65">Combinam-se as horas — avulso ou pack de 4 — e os valores.</span></li>
       </ol>
-    </div>
-  </section>
-
-  <section style="background:#002966;color:#FFFBF0;padding:clamp(56px,7vw,100px) clamp(20px,5vw,40px)">
-    <div style="max-width:1120px;margin:0 auto;display:grid;gap:clamp(28px,4vw,44px)">
-      <div style="display:grid;gap:16px;max-width:52ch">
-        <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,3.2vw,2.4rem);margin:0;letter-spacing:-0.02em;line-height:1.1">Depois da inscrição</h2>
-        <p style="margin:0;line-height:1.7;font-size:1.04rem;color:#FDECE3">Confirmamos tudo por WhatsApp antes de qualquer pagamento.</p>
-      </div>
-      <ol style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
-        <li style="display:grid;gap:12px;align-content:start;padding:clamp(22px,2.4vw,28px);background:rgba(255,251,240,0.06);border:1px solid rgba(255,251,240,0.34);border-radius:16px">
-          <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#F5A780">Passo 1</span>
-          <span style="line-height:1.65;font-size:1.02rem">Confirmamos o explicador para as disciplinas indicadas.</span>
-        </li>
-        <li style="display:grid;gap:12px;align-content:start;padding:clamp(22px,2.4vw,28px);background:rgba(255,251,240,0.06);border:1px solid rgba(255,251,240,0.34);border-radius:16px">
-          <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#F5A780">Passo 2</span>
-          <span style="line-height:1.65;font-size:1.02rem">Marcamos a primeira explicação, que serve para conhecer o aluno e perceber o que precisa de trabalhar.</span>
-        </li>
-        <li style="display:grid;gap:12px;align-content:start;padding:clamp(22px,2.4vw,28px);background:rgba(255,251,240,0.06);border:1px solid rgba(255,251,240,0.34);border-radius:16px">
-          <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#F5A780">Passo 3</span>
-          <span style="line-height:1.65;font-size:1.02rem">Combinamos as horas — avulso ou pack de 4 — e combinamos os valores.</span>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section style="background:#FFFBF0;color:#002966;padding:clamp(52px,6vw,88px) clamp(20px,5vw,40px)">
-    <div style="max-width:1120px;margin:0 auto;display:grid;gap:22px;justify-items:start">
-      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,2.8vw,2.2rem);margin:0;letter-spacing:-0.02em;max-width:26ch">Alguma dúvida antes de avançar?</h2>
-      <p style="margin:0;font-size:1.04rem;line-height:1.7;max-width:54ch">Explicamos como funciona e enviamos os valores, sem compromisso.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:14px">
-        <a href="https://wa.me/351964989883" style="background:#EF7639;color:#002966;border:1.5px solid #002966;border-radius:8px;padding:15px 24px;min-height:52px;display:inline-flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem;text-decoration:none;justify-self:start"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.19-.31a8.19 8.19 0 0 1-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.26 8.2Zm4.52-6.14c-.25-.13-1.47-.72-1.69-.8-.23-.08-.4-.13-.56.13-.17.25-.65.8-.8.96-.15.17-.29.19-.54.06a6.66 6.66 0 0 1-1.96-1.21 7.4 7.4 0 0 1-1.36-1.69c-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.4 1.02 2.57.13.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.6.19 1.14.16 1.57.1.48-.07 1.5-.61 1.71-1.2.21-.6.21-1.11.15-1.22-.06-.11-.23-.17-.48-.29Z"></path></svg>WhatsApp</a>
-        <a href="tel:+351214100902" style="border:1.5px solid #002966;color:#002966;border-radius:8px;padding:15px 24px;min-height:52px;display:inline-flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:600;text-decoration:none;justify-self:start">Ligar</a>
-      </div>
     </div>
   </section>
 </sc-if>
@@ -757,11 +734,12 @@ class Component extends DCLogic {
     const p = this.state.page;
     const known = ["/", "/encarregados", "/alunos", "/como-funciona", "/disciplinas", "/sobre", "/contactos", "/inscricao"];
     const campos = [
-      "Olá! Queria inscrever-me nas explicações.",
-      "",
-      "Nome e ano do aluno:",
+      "Inscrição — Desvio Padrão",
+      "Nome do aluno:",
+      "Data de nascimento:",
+      "Ano de escolaridade e escola:",
       "Disciplinas:",
-      "Onde (centro / online / casa):",
+      "Modalidade (centro / online / domicílio):",
       "Dias e horas possíveis:",
       "Encarregado de educação (nome e telefone):",
       "Email:"
