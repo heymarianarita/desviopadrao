@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desviopadrao.pt/sitemap.xml

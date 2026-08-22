@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://desviopadrao.pt/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://desviopadrao.pt/encarregados.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://desviopadrao.pt/alunos.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://desviopadrao.pt/como-funciona.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://desviopadrao.pt/disciplinas.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://desviopadrao.pt/sobre.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://desviopadrao.pt/contactos.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://desviopadrao.pt/inscricao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
